@@ -22,27 +22,16 @@
 </head>
 
 <body>
-	<h1> Welcome to my Personal Website! </h1>
-	<button id="showButton" onclick="toggleContent()">How cool is this site?</button>
-	<div id="hiddenContent">
-		<h2>Super cool.</h2>
+	<button id="showButton" onclick="toggleContent()">How cool is this website?</button>
+	<div id="coolText">
 		<p>lol</p>
 	</div>
 		<script>
-			function toggleContent(){
-				var content = document.getElementById("hiddenContent");
-				var button = document.getElementById("showButton");
-
-				if (content.style.display === "block") {
-					content.style.display = "none";
-					button.textContent = "Show Content"
-				} else {
-					content.style.display = "block";
-					button.textContent = "Hide Content";
-				}
+			function showCoolText() {
+				var text = document.getElementById("coolText");
+				text.style.display = "block"
 			}
 		</script>
-	<p> This is a simple website to start with. More to come!</p>
 
 </body>
 </html>

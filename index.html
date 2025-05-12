@@ -28,6 +28,21 @@
 		<h2>Super cool.</h2>
 		<p>lol</p>
 	</div>
+		<script>
+			function toggleContent(){
+				var content = document.getElementById("hiddenContent");
+				var button = document.getElementById("showButton");
+
+				if (content.style.display === "block") {
+					content.style.display = "none";
+					button.textContent = "Show Content"
+				} else {
+					content.style.display = "block";
+					button.textContent = "Hide Content";
+				}
+			}
+		</script>
 	<p> This is a simple website to start with. More to come!</p>
+
 </body>
 </html>
